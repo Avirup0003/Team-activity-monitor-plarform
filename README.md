@@ -33,11 +33,13 @@ This eliminates the need to manually check multiple tools, giving you a **quick 
 ## 🎯 Key Features
 
 ### 🔗 Integrations
+
 - **JIRA Cloud API** - Fetch assigned issues and status updates
 - **GitHub REST API** - Pull commit history and active PRs
 - **AI Summarization** - OpenAI GPT or Google Gemini for natural language summaries
 
 ### 🎨 Modern UI/UX
+
 - 🌈 **Animated gradient backgrounds** with smooth transitions
 - 💎 **Glassmorphism design** with backdrop blur effects
 - 🌓 **Dark/Light mode toggle** with smooth animations
@@ -46,6 +48,7 @@ This eliminates the need to manually check multiple tools, giving you a **quick 
 - ✨ **Floating logo animation** and gradient button effects
 
 ### 🧠 Smart Processing
+
 - **Intelligent name detection** from natural language queries
 - **Error handling** with graceful fallbacks
 - **Rate limit management** with API switching
@@ -56,6 +59,7 @@ This eliminates the need to manually check multiple tools, giving you a **quick 
 ## 🚀 Quick Start
 
 ### Prerequisites
+
 - Node.js (v16 or higher)
 - npm or yarn
 - JIRA Cloud account with API access
@@ -65,19 +69,22 @@ This eliminates the need to manually check multiple tools, giving you a **quick 
 ### Installation
 
 1. **Clone the repository**
+
    ```bash
    git clone https://github.com/your-username/team-activity-monitor.git
    cd team-activity-monitor
    ```
 
 2. **Install dependencies**
+
    ```bash
    npm install
    ```
 
 3. **Set up environment variables**
-   
+
    Edit `.env` with your API keys:
+
    ```env
    JIRA_BASE_URL=your-domain.atlassian.net
    JIRA_EMAIL=your-email@example.com
@@ -91,6 +98,7 @@ This eliminates the need to manually check multiple tools, giving you a **quick 
    ```
 
 4. **Start the application**
+
    ```bash
    npm start
    ```
@@ -112,6 +120,7 @@ Try these sample queries:
 - "Tell me about Aditya's current projects"
 
 The system will:
+
 1. Extract the team member's name
 2. Fetch their JIRA issues and GitHub activity
 3. Generate an AI-powered summary
@@ -145,11 +154,9 @@ team-activity-monitor/
 ## 🎨 UI Preview
 
 <div align="center">
-  <img src="https://via.placeholder.com/800x400/667eea/ffffff?text=Team+Activity+Monitor+UI" alt="UI Preview" width="80%" />
-  <p><em>Modern glassmorphism design with gradient backgrounds</em></p>
-</div>
 
 ### Design Highlights
+
 - **CSS Grid Layout** for unique element positioning
 - **Floating animations** and pulse effects
 - **Responsive breakpoints** for mobile optimization
@@ -160,12 +167,11 @@ team-activity-monitor/
 
 ## 🤖 AI Integration
 
-
 ### Google Gemini (Recommended - Free)
+
 - No API costs for development
 - Fast response times
 - Excellent summarization quality
-
 
 **Automatic fallback** ensures the system works even if one API is unavailable.
 
@@ -174,9 +180,11 @@ team-activity-monitor/
 ## 🔧 API Endpoints
 
 ### POST `/ask`
+
 Main endpoint for activity queries.
 
 **Request:**
+
 ```json
 {
   "question": "What is Aditya working on?"
@@ -184,6 +192,7 @@ Main endpoint for activity queries.
 ```
 
 **Response:**
+
 ```json
 {
   "answer": "Aditya is currently working on the user authentication module..."
@@ -209,16 +218,19 @@ The application has been tested with various scenarios:
 ## 🚀 Deployment
 
 ### Local Development
+
 ```bash
 npm run dev  # With nodemon for auto-restart
 ```
 
 ### Production Deployment
+
 ```bash
 npm start
 ```
 
 ### Docker Support (Future)
+
 ```dockerfile
 # Dockerfile will be added for containerized deployment
 ```
@@ -232,8 +244,6 @@ npm start
 3. Commit your changes (`git commit -m 'Add amazing feature'`)
 4. Push to the branch (`git push origin feature/amazing-feature`)
 5. Open a Pull Request
-
-
 
 <div align="center">
   <p><strong>Built with ❤️ for efficient team collaboration</strong></p>
