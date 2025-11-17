@@ -76,10 +76,7 @@ This eliminates the need to manually check multiple tools, giving you a **quick 
    ```
 
 3. **Set up environment variables**
-   ```bash
-   cp .env.example .env
-   ```
-
+   
    Edit `.env` with your API keys:
    ```env
    JIRA_BASE_URL=your-domain.atlassian.net
@@ -112,7 +109,7 @@ Try these sample queries:
 - "What is John working on these days?"
 - "Show me Sarah's recent activity"
 - "What has Mike been working on this week?"
-- "Tell me about Rahul's current projects"
+- "Tell me about Aditya's current projects"
 
 The system will:
 1. Extract the team member's name
@@ -163,17 +160,12 @@ team-activity-monitor/
 
 ## 🤖 AI Integration
 
-The system supports two AI providers for maximum flexibility:
 
 ### Google Gemini (Recommended - Free)
 - No API costs for development
 - Fast response times
 - Excellent summarization quality
 
-### OpenAI GPT
-- Premium summarization
-- Advanced language understanding
-- Higher rate limits
 
 **Automatic fallback** ensures the system works even if one API is unavailable.
 
@@ -187,14 +179,14 @@ Main endpoint for activity queries.
 **Request:**
 ```json
 {
-  "question": "What is Rahul working on?"
+  "question": "What is Aditya working on?"
 }
 ```
 
 **Response:**
 ```json
 {
-  "answer": "Rahul is currently working on the user authentication module..."
+  "answer": "Aditya is currently working on the user authentication module..."
 }
 ```
 
@@ -241,32 +233,7 @@ npm start
 4. Push to the branch (`git push origin feature/amazing-feature`)
 5. Open a Pull Request
 
----
 
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
----
-
-## 🙏 Acknowledgments
-
-- **Autonomize AI** for the assignment opportunity
-- **Icons8** for the beautiful icons
-- **Google Fonts** for the Inter font family
-- Open source community for amazing tools
-
----
-
-## 📞 Support
-
-If you have any questions or need help:
-
-- 📧 **Email:** your-email@example.com
-- 🐛 **Issues:** [GitHub Issues](https://github.com/your-username/team-activity-monitor/issues)
-- 📖 **Documentation:** This README
-
----
 
 <div align="center">
   <p><strong>Built with ❤️ for efficient team collaboration</strong></p>
